@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+li, a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    font-weight: 700;
+}
+
+.topo-menu ul{
+    display: flex;
+}
+.topo-menu li{
+    margin-right: 21px;
+}
+
+.topo-menu{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+.topo{
+    background-color:#2E948A;
+    width: 100vw;
+    min-height: 15vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 100px;
+    align-content: center;
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.25);
+}
+
+.topo-logo h1{
+    visibility: hidden;
+    font-size: 0.1em;
+}
+
+/* .topo-logo{
+    border: 1px solid purple;
+}  */
+
+.topo-menu li:hover{
+    font-size: 1.5em;
+    transition: 0.3s;
+    
+}
+
+.conteudo-principal{
+   padding: 50px;
+}
+
+.topo .menu-icon{
+    visibility: hidden;
+    position: absolute;
+    /* border: 1px solid red; */
+}
+
+
+
+.rodape{
+    min-height: 29vh;
+    background-color:#2E948A;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* .rodape .rodape-menu{
+    border: 1px solid red;
+}
+
+.rodape-logo{
+    border: 1px solid red;
+} */
+
+/* .rodape .rodape-button{
+    border: 1px solid red;
+} */
+
+.rodape .rodape-menu li{
+    font-weight: 400;
+    text-transform: lowercase;
+    padding: 5px;
+}
+
+.rodape .rodape-button input{
+    
+    padding: 10px;
+    margin: 5px;
+    width: 289px;
+    display: block;
+    border: 2px solid #FFFFFF;
+    font-size: 1.2em;
+    color: #FFFFFF;
+    background-color:#2E948A;
+    border-radius: 62px;
+    text-transform: lowercase;
+}
+
+.conteudo-principal #titulo-cursos{
+    padding: 50px;
+    /* border: 1px solid black; */
+}
+
+.conteudo-principal #titulo-cursos h1{
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 69px;
+    color: #FF4081;
+}
+.conteudo-principal #titulo-cursos p{
+    font-weight: 400;
+    font-size: 20px;
+    color: #555555;
+}
+
+.conteudo-principal .caixa{
+    padding: 50px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.conteudo-principal .caixa #caixa-texto{
+    /* background-color: red; */
+    width: 45vw;
+}
+
+.conteudo-principal .caixa #caixa-texto h1{
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 40px;
+    color: #FF4081;
+    margin: 37px 0px;
+}
+
+.conteudo-principal .caixa #caixa-texto p{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+}
+
+/* .conteudo-principal .caixa img{
+    background-color: purple;
+} */
+
+
+@media only screen and (max-width: 750px){
+ 
+
+    .topo .menu-icon{
+        visibility: visible;
+        border: 1px solid red;
+    }
+    
+    .topo-menu{
+        /* border: 1px solid red; */
+        visibility: hidden;
+        padding: 30px;
+    }
+
+    .topo-logo{
+        margin: 0;
+    }
+    .topo{
+        
+        justify-items: center;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        align-content: center;
+    }
+
+    .rodape{
+        /* border: 1px solid red; */
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .rodape div{
+        /* border: 1px solid red; */
+        margin: 15px;
+    }
+
+    .conteudo-principal .caixa{
+        box-sizing: border-box;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .conteudo-principal .caixa #caixa-texto{
+       display: block;
+       min-width: 350px;
+    }
+
+}
