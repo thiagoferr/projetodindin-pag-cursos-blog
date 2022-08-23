@@ -167,7 +167,7 @@ li, a{
 
     .topo .menu-icon{
         visibility: visible;
-        border: 1px solid red;
+        /* border: 1px solid red; */
     }
     
     .topo-menu{
