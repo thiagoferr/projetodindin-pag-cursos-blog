@@ -98,7 +98,7 @@ li, a{
 }
 
 .rodape .rodape-button input{
-    
+    cursor: pointer;
     padding: 10px;
     margin: 5px;
     width: 289px;
@@ -163,7 +163,6 @@ li, a{
 
 
 @media only screen and (max-width: 750px){
- 
 
     .topo .menu-icon{
         visibility: visible;
