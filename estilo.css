@@ -24,6 +24,7 @@ li, a{
 }
 
 .topo-menu{
+    /* border: 3px solid purple; */
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -32,13 +33,14 @@ li, a{
 }
 
 .topo{
+    /* border: 3px solid purple; */
     background-color:#2E948A;
     width: 100vw;
     min-height: 15vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0 100px;
+    /* padding: 0 100px; */
     align-content: center;
     box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.25);
 }
@@ -142,7 +144,7 @@ li, a{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 50vh;
+    height: 70vh;
 }
 
 
@@ -175,57 +177,61 @@ li, a{
 }
 
 
-@media only screen and (max-width: 850px){
-
-    .topo .menu-icon{
-        visibility: visible;
-        /* border: 1px solid red; */
-    }
-    
-    .topo-menu{
-        /* border: 1px solid red; */
-        visibility: hidden;
-        padding: 30px;
-    }
-
-    .topo-logo{
-        margin: 0;
-    }
-    .topo{
-        
-        justify-items: center;
-        justify-content: center;
-        display: flex;
-        align-items: center;
-        align-content: center;
-    }
-
-    .rodape{
-        /* border: 1px solid red; */
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-
-    .rodape div{
-        /* border: 1px solid red; */
-        margin: 15px;
-    }
+@media only screen and (max-width: 750px){
 
     .conteudo-principal .caixa{
+        /* border: 3px solid blue; */
         justify-items: center;
         box-sizing: border-box;
         flex-direction: column;
-        align-items: center;
+        align-content: center;
         
     }
 
     .conteudo-principal .caixa #caixa-texto{
+        /* border: 1px solid red; */
         display: flex;
         justify-items: center;
         min-width: 370px;
-        height: 60vh;
+        height: 70vh;
         align-content: space-around;
      }
 
-    
+     .rodape{
+        /* border: 1px solid red; */
+        flex-direction: column;
+        flex-wrap: wrap;
+    }    
+}
+
+
+@media only screen and (max-width: 480px){
+
+.topo .menu-icon{
+    visibility: visible;
+    /* border: 1px solid red; */
+}
+
+.topo-menu{
+    /* border: 1px solid red; */
+    visibility: hidden;
+    padding: 30px;
+}
+
+.topo-logo{
+    /* border: 1px solid red; */
+    margin: 0;
+}
+
+.topo{
+    /* border: 1px solid red;   */
+    justify-items: stretch;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+
+
 }
