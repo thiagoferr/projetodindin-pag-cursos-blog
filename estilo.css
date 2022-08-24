@@ -50,10 +50,6 @@ li, a{
     font-size: 0.1em;
 }
 
-/* .topo-logo{
-    border: 1px solid purple;
-}  */
-
 .topo-menu li:hover{
     font-size: 1.5em;
     transition: 0.3s;
@@ -184,6 +180,81 @@ li, a{
     text-transform: lowercase;
 }
 
+.caixa-blog{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    padding: 30px;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+
+.caixa-blog #caixa-texto-blog{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    /* border: 1px solid black; */
+    width: 400px;
+    height: 300px;
+    padding: 30px;
+}
+
+.caixa-blog img{
+    width: 400px;
+    height: fit-content;
+    padding: 30px;
+}
+
+.caixa-blog #caixa-texto-blog h1{
+    
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 40px;
+    color: #009688;
+}
+
+.caixa-material{
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 3px solid rgb(0, 17, 255); */
+    justify-content: space-evenly;
+    padding: 70px;
+}
+
+.caixa-material .caixa-link li,p,h1{
+    padding: 15px;
+}
+
+.caixa-material div{
+    margin: 30px 0;
+}
+
+.caixa-material a li{
+    display: block;
+    background-color: lightgray;    
+    width: 518px;
+    height: 259px;
+}
+
+.caixa-material a h1{
+    text-transform: none;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 34px;
+    width: 518px;
+    color: #FF4081;
+}
+
+.caixa-material a p{
+    text-transform: none;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 20px;
+    width: 518px;
+    color: #000000;
+}
+
 
 @media only screen and (max-width: 750px){
 
@@ -217,47 +288,76 @@ li, a{
 
 @media only screen and (max-width: 480px){
 
-.conteudo-principal .caixa img{
-    /* border: 1px solid black; */
-    width: fit-content;
-    height: 30vh;
+    .conteudo-principal .caixa img{
+        /* border: 1px solid black; */
+        width: fit-content;
+        height: 30vh;
+    }
+
+    .conteudo-principal .caixa #caixa-texto{
+        /* border: 1px solid red; */
+        display: flex;
+        justify-items: center;
+        min-width: 270px;
+        height: 70vh;
+        align-content: space-around;
+    }
+
+
+    .topo .menu-icon{
+        visibility: visible;
+        /* border: 1px solid red; */
+    }
+
+    .topo-menu{
+        /* border: 1px solid red; */
+        visibility: hidden;
+        padding: 30px;
+    }
+
+    .topo-logo{
+        /* border: 1px solid red; */
+        margin: 0;
+    }
+
+    .topo{
+        /* border: 1px solid red;   */
+        justify-items: stretch;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        align-content: center;
+    }
+
+    .caixa-blog img{
+        padding: 0;
+        width: 250px;
+        height: fit-content;
+    }
+
+
 }
 
-.conteudo-principal .caixa #caixa-texto{
-    /* border: 1px solid red; */
-    display: flex;
-    justify-items: center;
-    min-width: 270px;
-    height: 70vh;
-    align-content: space-around;
- }
+@media only screen and (max-width: 580px){
 
+    .caixa-material{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0;
+    }
+    .caixa-material .caixa-link p, 
+    .caixa-material .caixa-link h1{
+        width: fit-content;
+    }
 
-.topo .menu-icon{
-    visibility: visible;
-    /* border: 1px solid red; */
-}
+    .caixa-material .caixa-link li{
+        width: 300px;
+    }
 
-.topo-menu{
-    /* border: 1px solid red; */
-    visibility: hidden;
-    padding: 30px;
-}
-
-.topo-logo{
-    /* border: 1px solid red; */
-    margin: 0;
-}
-
-.topo{
-    /* border: 1px solid red;   */
-    justify-items: stretch;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    align-content: center;
-}
-
-
-
+    .caixa-material .caixa-link {
+        width: 300px;
+    }
+    
 }
